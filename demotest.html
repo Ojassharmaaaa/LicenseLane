@@ -1,0 +1,1770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>License Lane - Test Your Knowledge</title>
+    <style>
+.nav {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    padding: 1em;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    height: 48px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    color: #4a4a4a;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 9999px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.register {
+    background:#0056b3;
+    color: white;
+}
+
+.login {
+    background: #0056b3;
+    color: white;
+}
+
+.register:hover {
+    background: #0056b3;
+}
+
+.login:hover {
+    background: #0056b3;
+}
+
+/* Footer styles */
+footer {
+    width: 100%;
+}
+
+.footer-main {
+    background: #0056b3;
+    padding: 40px 0;
+    min-height: 300px;
+    border-radius: 20px 20px 0 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Left Section */
+.footer-left {
+    flex: 1;
+}
+
+.footer-logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.last-updated {
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Middle Section */
+.footer-middle {
+    flex: 1;
+    margin: 0 40px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Right Section */
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-right h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.social-icon i {
+    font-size: 20px;
+    color: #0056b3;
+}
+
+
+.footer-bottom {
+            background: #f8fafc;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-right {
+        text-align: left;
+    }
+
+    .social-links {
+        justify-content: flex-start;
+    }
+
+    .footer-main {
+        border-radius: 15px 15px 0 0;
+    }
+}
+        :root {
+            --primary-color: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary-color: #8b5cf6;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: #f8fafc;
+            color: var(--text-dark);
+            min-height: 100vh;
+        }
+
+/* Hero section styles */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 12rem 2rem;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.95;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+        /* Feature Cards */
+        .features {
+            padding: 60px 0;
+            background-color: #f8fafc;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            background: #f3f4f6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Start Button */
+        .start-btn {
+            background: #fbbf24;
+            color: var(--text-dark);
+            font-size: 1.25rem;
+            font-weight: 600;
+            padding: 1rem 2.5rem;
+            border-radius: 9999px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: block;
+            margin: 3rem auto;
+        }
+
+        .start-btn:hover {
+            background: #f59e0b;
+            transform: translateY(-2px);
+        }
+.quiz-container {
+    display: flex;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.progress-sidebar {
+    flex: 0 0 300px;
+}
+
+.quiz-main {
+    flex: 1;
+    min-width: 0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #0056b3;
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+/* Quiz content styling */
+.quiz-main h1 {
+    font-size: 2.5rem;
+    color: #F4B63F;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.question-text {
+    font-size: 1.5rem;
+    color: #1A1A1A;
+    margin-bottom: 2rem;
+}
+img {
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 1rem auto;
+}
+.options-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.option-btn {
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+    background: white;
+    border: 1px solid #E5E7EB;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.option-btn:hover:not(:disabled) {
+    border-color: #0056b3;
+    background: #F9FAFB;
+}
+
+.option-btn:disabled {
+  cursor: default;
+}
+
+
+/*Result section*/
+.result-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: none;
+}
+
+.result-section h2 {
+  font-size: 2rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.result-section p {
+  font-size: 1.25rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+/* Progress section styling */
+.progress-sidebar h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+}
+
+.progress-chart {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.progress-number {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #E5E7EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #4B5563;
+    cursor: pointer;
+}
+
+.progress-number.active {
+    background: #98D15F;
+    color: white;
+}
+
+.progress-number.completed {
+    background: #0056b3;
+    color: white;
+}
+
+.progress-text {
+    color: #6B7280;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Restart button styling */
+.restart-quiz {
+    width: 100%;
+    padding: 1rem;
+    background: #E57373;
+    color: white;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.restart-quiz:hover {
+    background: #EF5350;
+}
+
+
+.btn-primary {
+  background: #0056b3;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+/* Responsive design */
+@media (max-width: 768px) {
+    .quiz-container {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    .progress-sidebar {
+        width: 100%;
+    }
+}
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-card {
+                padding: 1.5rem;
+            }
+        }
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .nav-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+    .hero {
+        padding: 8rem 1.5rem;
+        min-height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+}
+
+
+.facts-section {
+    background: #f8fafc;
+    padding: 2rem 0;
+    margin: -2rem 0 2rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.facts-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.facts-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.facts-header h2 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.facts-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.facts-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.facts-track {
+    display: flex;
+    gap: 1.5rem;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    padding: 1rem 0;
+}
+
+.fact-card {
+    min-width: calc(33.333% - 1rem);
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateX(0);
+    transition: all 0.5s ease;
+    opacity: 0.7;
+    scale: 0.95;
+}
+
+.fact-card.active {
+    opacity: 1;
+    scale: 1;
+}
+
+.fact-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.fact-card h3 {
+    color: #0056b3;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.fact-card p {
+    color: #4b5563;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.slider-nav {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.slider-nav:hover {
+    background: #0056b3;
+    color: white;
+}
+
+.facts-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #cbd5e1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: #0056b3;
+    transform: scale(1.5);
+}
+
+@media (max-width: 768px) {
+    .fact-card {
+        min-width: calc(100% - 1rem);
+    }
+    
+    .facts-header h2 {
+        font-size: 2rem;
+    }
+    
+    .facts-container {
+        padding: 0 1rem;
+    }
+}
+#questionBankSection {
+            display: none;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .question-bank-container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+
+        .question-card {
+            background: white;
+            padding: 20px 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .question {
+            color: #1a365d;
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .options {
+            padding-left: 20px;
+        }
+
+        .option {
+            margin: 8px 0;
+            color: #4a5568;
+        }
+
+        .correct-answer {
+            color: #047857;
+            font-weight: bold;
+            background: #ecfdf5;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #1a365d;
+        }
+
+        #quizSection {
+    display: none;
+    position: relative;
+    width: 100%;
+}
+
+#questionBankSection {
+    display: none;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #1a365d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #2d4a7c;
+    transform: translateY(-2px);
+}
+
+.back-button svg {
+    width: 16px;
+    height: 16px;
+}
+    </style>
+</head>
+<body>
+
+<!-- Add this button HTML just after the body tag -->
+<button id="backButton" class="back-button" style="display: none;" onclick="goBack()">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+    </svg>
+    Back to Main
+</button>
+
+
+  <nav class="nav">
+    <div class="nav-container">
+        <!-- Logo -->
+        <a href="/" class="nav-logo">
+            <img src="logo.png" alt="LANE" height="48">
+        </a>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="Analyticspage.html">Dashboard</a></li>
+          <li><a href="dyk.html">Did You Know?</a></li>
+          <li><a href="demotest.html">Demo Test</a></li>
+          <li><a href="help.html">FAQs</a></li>
+          <li><a href="about.html">About Us</a></li>
+          
+      </ul>
+
+
+        <!-- Auth Buttons -->
+        <div class="nav-buttons">
+            <button class="button register">Register</button>
+            <button class="button login">Login</button>
+        </div>
+    </div>
+</nav>
+
+<main>
+  <section class="hero">
+      <h1>Ready to Hit the Road?</h1>
+      <h2>Test Your Knowledge Here!</h2>
+      <p>Master the rules of the road with our comprehensive driving test preparation platform.</p>
+  </section>
+</main>
+
+
+
+    <div class="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h3>Practice Test</h3>
+                <p>Get ready for your license test with our practice questions.</p>
+                <button onclick="startQuiz()" class="btn btn-primary">Start Now →</button>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🎁</div>
+                <h3>Question Bank</h3>
+                <p>List of questions & answers and meaning of road signs</p>
+                <button onclick="showQuestionBank()" class="btn btn-primary">Start Now →</button>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">👑</div>
+                <h3>Mock Test</h3>
+                <p>Full-length tests simulating the actual exam experience.</p>
+                <button onclick="startQuiz()" class="btn btn-primary">Start Now →</button>
+            </div>
+        </div>
+
+        <button class="start-btn" onclick="startQuiz()">PLAY TODAY</button>
+    </div>
+
+
+<!-- Question Bank Section -->
+<div id="questionBankSection">
+  <div class="section-title">
+      <h2>Traffic Rules Question Bank</h2>
+      <p>Important questions with highlighted correct answers</p>
+  </div>
+  <div class="question-bank-container">
+      <div class="question-card">
+          <div class="question">1. If you are near a pedestrian crossing and there are people waiting to cross the road, you should:</div>
+          <div class="options">
+              <div class="option">a. Slow down, press horn and proceed</div>
+              <div class="option">b. Press horn and proceed</div>
+              <div class="correct-answer">c. Stop the vehicle, wait until pedestrians cross and then move forward</div>
+          </div>
+      </div>
+      <div class="question-card">
+        <div class="question">2. You are coming towards a narrow bridge and another vehicle is about to enter the bridge from the other side. What should you do?</div>
+        <div class="options">
+            <div class="correct-answer">a. Wait until the other vehicle crosses the bridge before proceeding</div>
+            <div class="option">b. Switch on headlight and cross the bridge</div>
+            <div class="option">c. Increase speed of the vehicle and try to cross the bridge quickly</div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question">3. In case you see a vehicle that has met with an accident with injured passengers inside, you should:</div>
+        <div class="options">
+            <div class="option">a. Stop your vehicle and report the matter to the nearest police station</div>
+            <div class="option">b. Take the vehicle to the closest police station and report the accident</div>
+            <div class="correct-answer">c. Take measures to secure medical attention to those injured and report the accident to the closest police station within a period of 24 hours</div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question">4. On a road that has been designated as one way:</div>
+        <div class="options">
+            <div class="correct-answer">a. You should not drive in reverse gear</div>
+            <div class="option">b. You should not overtake</div>
+            <div class="option">c. You should not park</div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question">5. You can overtake a vehicle that is in the front:</div>
+        <div class="options">
+            <div class="option">a. Through the left side of the vehicle ahead</div>
+            <div class="correct-answer">b. Through the right side of the vehicle ahead</div>
+            <div class="option">c. If the road is wide enough</div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question">6. If a vehicle approaches a railway crossing that is not guarded and the vehicle wants to proceed, the driver should:</div>
+        <div class="options">
+            <div class="option">a. Wait until the train passes</div>
+            <div class="option">b. Press horn and cross the track at the earliest</div>
+            <div class="correct-answer">c. Stop the vehicle on left hand side of the road, approach the track and ensure that there is no train or trolley coming from any side prior to crossing</div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question">7. Transport vehicles can be distinguished by:</div>
+        <div class="options">
+            <div class="option">a. The colour of the vehicle</div>
+            <div class="correct-answer">b. Number plate of the vehicle</div>
+            <div class="option">c. Tyre size of the vehicle</div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question">8. A learner's license is valid for a period of:</div>
+        <div class="options">
+            <div class="option">a. 30 days</div>
+            <div class="correct-answer">b. 6 months</div>
+            <div class="option">c. Until a driving licence is availed</div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question">9. In case a road does not have a footpath, pedestrians will have to:</div>
+        <div class="options">
+            <div class="correct-answer">a. Walk on the right side of the road</div>
+            <div class="option">b. Walk on the left side of the road</div>
+            <div class="option">c. Walk on any side of the road</div>
+        </div>
+    </div>
+
+    <div class="question-card">
+        <div class="question">10. Free passage should be provided to the following vehicles:</div>
+        <div class="options">
+            <div class="option">a. Express buses</div>
+            <div class="option">b. Police vehicles</div>
+            <div class="correct-answer">c. Fire service vehicles and ambulances</div>
+        </div>
+    </div>
+      <!-- Add remaining questions similarly -->
+      <!-- Questions 2-10 here -->
+
+  </div>
+</div>
+
+
+
+    <div id="quizSection" class="quiz-section" style="display: none;">
+      <div class="quiz-container">
+          <div class="progress-sidebar">
+            <h2>Progress</h2>
+            <div class="progress-chart">
+               <!-- Numbers will be added by JavaScript -->
+            </div>
+              <p class="progress-text">Click the question number to navigate</p>
+              <button class="restart-quiz" onclick="restartQuiz()">Restart Quiz</button>
+          </div>
+          <div class="quiz-main">
+              <div class="progress-bar">
+                  <div class="progress-fill" id="progressFill"></div>
+              </div>
+              <h1>Licence Lane</h1>
+              <div class="question-card">
+                  <p id="questionText" class="question-text"></p>
+                  <img id="questionImage"class="img">
+                  <div id="optionsContainer" class="options-grid"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <div id="resultSection" class="result-section">
+        <h2>Quiz Complete!</h2>
+        <p id="scoreText"></p>
+        <button onclick="restartQuiz()" class="btn btn-primary">Try Again</button>
+    </div>
+
+ 
+<section class="facts-section">
+  <div class="facts-container">
+      <div class="facts-header">
+          <h2>Interesting Facts</h2>
+          <p>Discover fascinating insights about driving and road safety</p>
+      </div>
+      <div class="facts-slider">
+          <button class="slider-nav prev-btn">
+              <i class="fa fa-chevron-left"></i>
+          </button>
+          <div class="facts-track">
+              <div class="fact-card active">
+                  <div class="fact-icon">🚗</div>
+                  <h3>First License</h3>
+                  <p>The first driver's license was issued in 1903 to Karl Benz, the inventor of the modern car!</p>
+              </div>
+              <div class="fact-card">
+                  <div class="fact-icon">🚦</div>
+                  <h3>Traffic Lights</h3>
+                  <p>The first traffic light was installed in London in 1868 - and it exploded less than a month later!</p>
+              </div>
+              <div class="fact-card">
+                  <div class="fact-icon">🛣️</div>
+                  <h3>Longest Road</h3>
+                  <p>The Pan-American Highway is the longest road in the world at 48,000 kilometers!</p>
+              </div>
+              <div class="fact-card">
+                  <div class="fact-icon">🎯</div>
+                  <h3>Safety First</h3>
+                  <p>The three-point seat belt design has saved over one million lives since its invention in 1959!</p>
+              </div>
+              <div class="fact-card">
+                  <div class="fact-icon">🚸</div>
+                  <h3>Road Signs</h3>
+                  <p>There are over 600 different types of road signs used across the world!</p>
+              </div>
+          </div>
+          <button class="slider-nav next-btn">
+              <i class="fa fa-chevron-right"></i>
+          </button>
+      </div>
+      <div class="facts-dots"></div>
+  </div>
+</section>
+  
+<footer>
+    <div class="footer-main">
+        <div class="container">
+            <!-- Left Section -->
+            <div class="footer-left">
+                <div class="logo-section">
+                    <a href="#">
+                        <img src="logo.png" alt="Lane License Logo" class="footer-logo">
+                    </a>
+                    <p class="last-updated">Last Updated on: 12<sup>th</sup> Nov 2024</p>
+                </div>
+            </div>
+
+            <!-- Middle Section -->
+            <div class="footer-middle">
+                <nav class="footer-nav">
+                    <a href="#">Website Policies</a>
+                    <a href="#">Disclaimer</a>
+                    <a href="#">Help</a>
+                    <a href="#">Terms and Conditions</a>
+                </nav>
+            </div>
+
+            <!-- Right Section -->
+            <div class="footer-right">
+                <h2>Connect with us</h2>
+                <div class="social-links">
+                    <a href="#" class="social-icon">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- Footer Bottom Section -->
+ <div class="footer-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ftb">
+                    <div class="row">
+                        <div class="col-md-12 ft-right">
+                            <div class="copyright-sec text-center">
+                                <p>Copyright @ 2024 License Lane. | India, All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+
+
+
+  
+  <script>
+  const questions = [
+    {
+      question: "When near a pedestrian crossing, as the pedestrians are waiting to cross the road, what should you do?",
+      options: ["Sound horn and proceed", "Slow down, sound horn and pass", "Stop the vehicle and wait till the pedestrians cross the road and then proceed"],
+      answer: 2
+    },
+    {
+      question: "A person driving a vehicle in a public place without a licence, is liable for:",
+      options: ["Penalty only", "Penalty for the driver and the owner and/or seizure of vehicle", "A warning"],
+      answer: 1
+    },
+    /*Image ques*/
+   {
+        question: "What does this sign indicate?",
+        image: "https://media.istockphoto.com/id/1031642272/vector/roadsign.jpg?s=612x612&w=0&k=20&c=cbmox5TX1019U_mkOaZuZdGuFQ-VKzJfMj7oGgQfqfc=", // Add the path to your image
+        options: ["Stop", "NO Entry", "Hospital"],
+        answer: 1 // Index of the correct answer
+    },
+    {
+      question: "While parking your vehicle on a downward gradient, in addition to the application of hand brake, the gear engaged should be:",
+      options: ["In neutral", "In first", "In reverse"],
+      answer: 2
+    },
+    {
+      question: "When a vehicle is involved in an accident causing injury to any person, what should you do?",
+      options: ["Take the vehicle to the nearest police station and report the accident", "Stop the vehicle and report to the police station", "Take all reasonable steps to secure medical attention to the injured and report to the nearest police station within 24 hours"],
+      answer: 2
+    },
+    /*Image ques*/
+   {
+        question: "What does this sign indicate?",
+        image: "https://5.imimg.com/data5/SELLER/Default/2021/3/AX/CW/TH/87492391/bike-sign-board.jpg", // Add the path to your image
+        options: ["Give way", "Traffic island ahead", "Hospital Ahead"],
+        answer: 0 // Index of the correct answer
+    },
+    {
+      question: "On a road designated as one way, which of the following holds true?",
+      options: ["Parking is prohibited", "Overtaking is prohibited", "Should not drive in reverse gear"],
+      answer: 2
+    },
+    {
+      question: "When a blind person is crossing the road holding a white cane, the driver should:",
+      options: ["Consider the white cane as a traffic sign to stop the vehicle", "Blow the horn and proceed", "Slow down and proceed with caution"],
+      answer: 0
+    },
+    /*Image ques*/
+   {
+        question: "What does this sign indicate?",
+        image: "https://5.imimg.com/data5/SELLER/Default/2023/1/HW/SY/KR/21032740/one-way-traffic-sign-board-500x500.png", // Add the path to your image
+        options: ["No entry", "One way", "Speed limit ends"],
+        answer: 1 // Index of the correct answer
+    },
+    {
+      question: "What happens if you are carrying overload in goods carriages?",
+      options: ["It is not a punishable offence", "Only attracts a fine", "Driving licence can be suspended or cancelled"],
+      answer: 2
+    },
+    {
+      question: "When you reach an intersection where there is no signal light or a traffic police man, you should:",
+      options: ["Give way to traffic approaching the intersection from other roads", "Give proper signal, sound the horn and then proceed", "Give way to the traffic approaching the intersection on your right side and proceed after giving necessary signals"],
+      answer: 2
+    },
+    /*Image ques*/
+   {
+        question: "What does this sign indicate?",
+        image: "https://5.imimg.com/data5/SELLER/Default/2024/3/403367864/OR/EP/AM/32531873/767-500x500.jpg", // Add the path to your image
+        options: ["Entry", "Turn right", "Compulsary Turn Left"],
+        answer: 2 // Index of the correct answer
+    },
+    {
+      question: "When is overtaking prohibited?",
+      options: ["When the road is marked with a broken center line in the colour white", "When the vehicle is being driven on a steep hill", "When the road is marked with a continuous center line in the colour yellow"],
+      answer: 1
+    },
+    {
+      question: "If the road is marked with broken white lines, you:",
+      options: ["shall not change track", "can change track, if required", "shall stop the vehicle"],
+      answer: 1
+    },
+    /*Image ques*/
+   {
+        question: "What does this sign indicate?",
+        image: "https://5.imimg.com/data5/SH/WT/MY-152348/u-turn-prohibited-mandatory-retro-reflective-road-signage-500x500.jpg", // Add the path to your image
+        options: ["Right turn prohibited", "Sharp curve to the right", "U-turn prohibited "],
+        answer: 2 // Index of the correct answer
+    },
+    {
+      question: "What is the meaning of a blinking red traffic light?",
+      options: ["Stop the vehicle till green light glows", "Stop the vehicle and proceed if safe", "Reduce speed and proceed"],
+      answer: 1
+    },
+    {
+      question: "Maximum permitted speed of a motor car on national highway is:",
+      options: ["60 km/hr", "70 km/hr", "80 km/hr"],
+      answer: 1
+    },
+    /*Image ques*/
+   {
+        question: "What does this sign indicate?",
+        image: "https://5.imimg.com/data5/FB/SX/MY-11406557/pedestrian-crossing-sign-board.jpg", // Add the path to your image
+        options: ["Pedestrians prohibited", "Pedestrian crossing ", "Pedestrians may enter"],
+        answer: 1 // Index of the correct answer
+    },
+    {
+      question: "Where is the number of passengers permitted to be taken in a private vehicle recorded?",
+      options: ["Registration Certificate", "Tax Token", "Permit"],
+      answer: 0
+    },
+    {
+      question: "Before starting the engine of a vehicle, you should:",
+      options: ["Check radiator water level and engine oil level", "Check headlight", "Check the brakes"],
+      answer: 0
+    },
+    {
+      question: "The maximum permissible speed of a light motor vehicle is:",
+      options: ["60 km/hr", "70 km/hr", "No limit"],
+      answer: 0
+    },
+    /*Image ques*/
+   {
+        question: "What does this sign indicate?",
+        image: "https://5.imimg.com/data5/LL/GS/MY-152348/right-turn-prohibited-mandatory-retro-reflective-road-signage-500x500.jpg", // Add the path to your image
+        options: ["U- Turn prohibited", "Overtaking through left prohibited", "Right turn prohibited"],
+        answer: 2 // Index of the correct answer
+    },
+    {
+      question: "According to Section 113 of the Motor Vehicle Act 1988, a driver should not drive a vehicle:",
+      options: ["After consuming alcohol", "Exceeding the speed limit", "Exceeding the weight permitted to carry"],
+      answer: 2
+    },
+    {
+      question: "You are behind a bus that has stopped to pick up or drop off passengers. What should you do?",
+      options: ["Patiently wait behind", "Overtake from the left", "Overtake from the right"],
+      answer: 0
+    },
+    {
+      question: "The middle lane is for:",
+      options: ["Overtaking", "Traffic driving at 40km/hr", "Two wheelers"],
+      answer: 1
+    },
+    /*Image ques*/
+   {
+        question: "What does this sign indicate?",
+        image: "https://5.imimg.com/data5/CD/VT/MY-152348/horn-prohibited-mandatory-retro-reflective-road-signage-500x500.png", // Add the path to your image
+        options: ["Compulsory sound horn", "May sound horn", "Horn prohibited"],
+        answer: 2 // Index of the correct answer
+    },
+    {
+      question: "A flashing yellow signal is used when:",
+      options: ["Traffic lights are not working", "You should slow down and proceed with caution", "There is construction going on nearby"],
+      answer: 1
+    },
+    {
+      question: "Where, out of the following, are you allowed to park?",
+      options: ["A footpath", "On top of a hill", "Neither of the options above"],
+      answer: 2
+    },
+    {
+      question: "A high beam in foggy conditions:",
+      options: ["Is good because you can see more clearly", "Is bad because it reflects back and can dazzle", "Makes sure that others can see you"],
+      answer: 1
+    },
+    /*Image ques*/
+   {
+        question: "What does this sign indicate?",
+        image: "https://5.imimg.com/data5/KH/HC/MY-152348/side-road-left-cautionary-retro-reflective-road-signage-500x500.jpg", // Add the path to your image
+        options: ["May turn to left ", "Side road left", "Compulsory go ahead or turn left"],
+        answer: 1 // Index of the correct answer
+    },
+    {
+      question: "You are waiting at a T-Junction. A vehicle is coming from the left with right signal flashing. What should you do?",
+      options: ["Wait until the vehicle turns to the right side", "Accelerate and move forward", "Move ahead slowly"],
+      answer: 0
+    },
+    {
+      question: "When should you switch on your hazard warning lights?",
+      options: ["When you are moving straight", "When your vehicle is parked and the same is causing inconvenience to other road users", "When your vehicle is parked in a no parking area"],
+      answer: 1
+    },
+    {
+      question: "You are approaching a narrow bridge, another vehicle is about to enter the bridge from the opposite side. You should:",
+      options: ["Increase the speed and try to cross the bridge as fast as possible", "Put on the head light and pass the bridge", "Wait till the other vehicle crosses the bridge and then proceed"],
+      answer: 2
+    },
+    /*Image ques*/
+   {
+        question: "What does this sign indicate?",
+        image: "https://rukminim2.flixcart.com/image/850/1000/kyeqjrk0/emergency-sign/k/o/b/lsi-mcsb-600mm-npm-ladwa-original-imaganf2zxgkwjyq.jpeg?q=20&crop=false", // Add the path to your image
+        options: ["No parking", "Do not stop", "End of restriction"],
+        answer: 0 // Index of the correct answer
+    },
+    {
+      question: "You can overtake a vehicle in the front:",
+      options: ["From the right side of the vehicle", "From the left side of the vehicle", "From the left side of the vehicle, if the road is wide"],
+      answer: 0
+    },
+    {
+      question: "When a vehicle approaches an unguarded railway level crossing, before crossing it, the driver shall:",
+      options: ["Stop the vehicle on the left side of the road, get down from the vehicle, go to the railway track, and ensure that no train or trolley is coming from either side", "Sound horn and cross the track as fast as possible", "Wait till the train passes"],
+      answer: 0
+    },
+    {
+      question: "How can you distinguish a transport vehicle?",
+      options: ["By looking at the tyre size", "By the colour of the vehicle", "By looking at the number plate of the vehicle"],
+      answer: 2
+    },
+    /*Image ques*/
+   {
+        question: "What does this sign indicate?",
+        image: "https://www.shutterstock.com/image-vector/speed-limit-traffic-sign-50-260nw-591847883.jpg", // Add the path to your image
+        options: ["drive the vehicle exceeding 50km/hr.", "Drive the vehicle at 50 km/hr", "Drive the vehicle not exceeding 50km/hr."],
+        answer: 2 // Index of the correct answer
+    },
+    {
+      question: "What is the validity of the learner's licence?",
+      options: ["3 months", "6 months", "9 months"],
+      answer: 1
+    },
+    {
+      question: "Free passage should be given to which of the following types of vehicles?",
+      options: ["Police vehicles", "Emergency vehicles (Ambulances and fire service vehicles)", "Buses"],
+      answer: 1
+    },
+    {
+      question: "Driver of a motor vehicle shall drive through:",
+      options: ["The right side of the road", "The left side of the road", "The centre of the road"],
+      answer: 1
+    },
+    /*Image ques*/
+   {
+        question: "What does this sign indicate?",
+        image: "https://rukminim2.flixcart.com/image/850/1000/kvfkivk0/emergency-sign/d/l/f/lefthairpinbend-600mm-ladwa-original-imag8c5mrgnzhpty.jpeg?q=20&crop=false", // Add the path to your image
+        options: ["Keep left ", "Left hair pin bend ", "Left descend "],
+        answer: 1 // Index of the correct answer
+    },
+    {
+      question: "When are fog lamps used?",
+      options: ["During the night", "When there is mist", "When the opposite vehicle is not using dim lights"],
+      answer: 1
+    },
+    {
+      question: "A red traffic light indicates?",
+      options: ["Stop", "Slow down", "Go"],
+      answer: 0
+    },
+    /*Image ques*/
+   {
+        question: "What does this sign indicate?",
+        image: "https://ladwas.com/wp-content/uploads/2022/06/51maoepMa8L._SL1500_-1-300x300.jpg", // Add the path to your image
+        options: ["No entry for cycles", "Cycle crossing prohibited", "Cycle crossing "],
+        answer: 2 // Index of the correct answer
+    },
+    {
+      question: "Can you park your vehicle in front of the entrance to a hospital?",
+      options: ["Yes", "No", "Yes, but only if a NO PARKING sign is not there"],
+      answer: 1
+    },
+    {
+      question: "Where the slippery road sign is seen on the road, the driver shall:",
+      options: ["Apply the brake", "Proceed at the same speed", "Reduce speed by changing gears"],
+      answer: 2
+    },
+    /*Image ques*/
+   {
+        question: "What does this sign indicate?",
+        image: "https://5.imimg.com/data5/SELLER/Default/2021/7/RX/WF/YW/1722164/cautionary-road-signs.jpg", // Add the path to your image
+        options: ["Hospital ", "NO Entry", "Cross road "],
+        answer: 2 // Index of the correct answer
+    },
+    {
+      question: "Is drunken driving allowed?",
+      options: ["Yes", "No", "Allowed only in private vehicles"],
+      answer: 1
+    },
+    {
+      question: "Where is the use of horn prohibited?",
+      options: ["Near hospitals and Courts of Law", "Near police stations", "Near places of worship"],
+      answer: 0
+    },
+    /*Image ques*/
+   {
+        question: "What does this sign indicate?",
+        image: "https://5.imimg.com/data5/SELLER/Default/2024/3/403353269/BV/FS/TF/32531873/ytut-500x500.jpg", // Add the path to your image
+        options: ["Overtaking prohibited", "Entry through left prohibited", "Entry through right side prohibited"],
+        answer: 0 // Index of the correct answer
+    },
+  
+  {
+    question: "Why is a rear view mirror used?",
+    options: ["To see your face", "To watch the traffic approaching from behind the vehicle", "To watch the passengers in the backseat"],
+    answer: 1
+  },
+  {
+    question: "Records of a private vehicle are:",
+    options: ["Registration Certificate, G.C.R., Insurance Certificate", "Registration Certificate, Insurance Certificate, Tax Token, Driving Licence", "Registration Certificate, Permit, Trip Sheet"],
+    answer: 1
+  },
+  /*Image ques*/
+  {
+        question: "What does this sign indicate?",
+        image: "https://4.imimg.com/data4/IU/AW/MY-13762475/narrow-road-ahead-sign.jpg", // Add the path to your image
+        options: ["Narrow road ahead", "Roads on both sides ahead", "Narrow bridge ahead"],
+        answer: 0 // Index of the correct answer
+    },
+  {
+    question: "What is the validity of a Pollution Under Control Certificate (PUCC)?",
+    options: ["6 months", "9 months", "1 year"],
+    answer: 0
+  },
+  {
+    question: "While you are driving with the headlight in high beam during night, a vehicle approaches from opposite direction, you will:",
+    options: ["Proceed keeping to the left", "Put the headlight in dim and bright alternatively several times", "Dim the headlight till the vehicle passes"],
+    answer: 2
+  },
+  {
+    question: "What is the minimum age to get a licence to drive a motorcycle without gear?",
+    options: ["14 years", "15 years", "16 years"],
+    answer: 2
+  },
+  /*Image ques*/
+  {
+        question: "What does this sign indicate?",
+        image: "https://detec.in/cdn/shop/products/12345_378e6c92-6abd-43f2-b30b-fbf4f8d96b05.jpg?v=1627681383", // Add the path to your image
+        options: ["Road closed ", "No parking", "End of speed restriction"],
+        answer: 2 // Index of the correct answer
+    },
+  {
+    question: "While turning to the left, the driver of a two wheeler shall:",
+    options: ["Extend his left hand towards left", "Not show any hand signals", "Show left turn signal with his right hand"],
+    answer: 2
+  },
+  {
+    question: "One time tax for a new car is for:",
+    options: ["5 years", "15 years", "20 years"],
+    answer: 1
+  },
+  {
+    question: "When your vehicle is being overtaken, you should:",
+    options: ["Stop your vehicle and let the vehicle overtake", "Increase the speed of your vehicle", "Not obstruct the other vehicle from overtaking"],
+    answer: 2
+  },
+  /*Image ques*/
+  {
+        question: "What does this sign indicate?",
+        image: "https://4.imimg.com/data4/CP/HQ/MY-6322633/first-aid-post-informatory-sign-board.jpg", // Add the path to your image
+        options: ["Hospital ", "Resting place", "First aid post "],
+        answer: 2 // Index of the correct answer
+    },
+  {
+    question: "When is the hand brake to be used?",
+    options: ["To reduce the speed", "To brake suddenly", "To park the vehicle"],
+    answer: 2
+  },
+  {
+    question: "When a motor vehicle is involved in an accident, you should",
+    options: ["Report to the nearest police station within 24 hours", "Report to the nearest police station within 12 hours", "Report to the nearest police station within 48 hours"],
+    answer: 0
+  },
+  {
+    question: "Smoking while driving public service vehicle can lead to",
+    options: ["Suspension of the driving licence", "A heavy fine", "None of the above"],
+    answer: 0
+  },
+  /*Image ques*/
+  {
+        question: "What does this sign indicate?",
+        image: "https://5.imimg.com/data5/SELLER/Default/2024/3/403356296/XE/OE/BK/32531873/yi78.jpg", // Add the path to your image
+        options: ["Narrow bridge ahead", "Narrow road ahead", "Roads on both sides in front"],
+        answer: 0 // Index of the correct answer
+    },
+  {
+    question: "What is defensive driving?",
+    options: ["Driving cautiously anticipating violation of traffic rules and road signs both by drivers and other road users", "Driving with sole aim of reaching the destination with no regards to road signs", "Driving on the assumption that other road users will be cautious about their safety"],
+    answer: 0
+  },
+  {
+    question: "Zig-Zag driving is:",
+    options: ["Dangerous for two-wheelers only", "Dangerous for everyone at all times", "Dangerous for four-wheelers vehicles"],
+    answer: 1
+  },
+  {
+    question: "Reversing is prohibited on:",
+    options: ["The main road", "A one-way", "A T-junction"],
+    answer: 1
+  }
+];
+
+
+  
+let selectedQuestions = [];
+  let currentQuestionIndex = 0;
+  let score = 0;
+  
+  function selectRandomQuestions() {
+    const shuffled = [...questions].sort(() => Math.random() - 0.5);
+    selectedQuestions = shuffled.slice(0, 15);
+  }
+  
+  function startQuiz() {
+  // Hide features section and show quiz section
+  document.querySelector('.features').style.display = 'none';
+  document.getElementById('quizSection').style.display = 'block';
+  document.getElementById('backButton').style.display = 'flex';
+  
+  // Initialize the quiz
+  selectRandomQuestions();
+  currentQuestionIndex = 0;
+  score = 0;
+
+/// Create progress numbers
+const progressChart = document.querySelector('.progress-chart');
+    progressChart.innerHTML = ''; // Clear existing numbers
+    
+    for (let i = 1; i <= 15; i++) {
+        const numberDiv = document.createElement('div');
+        numberDiv.className = 'progress-number';
+        if (i === 1) numberDiv.classList.add('active');
+        numberDiv.textContent = i;
+        numberDiv.onclick = () => navigateToQuestion(i - 1);
+        progressChart.appendChild(numberDiv);
+    }
+
+  showQuestion();
+}
+function navigateToQuestion(index) {
+        if (index < currentQuestionIndex) {
+            currentQuestionIndex = index;
+            showQuestion();
+        }
+    }
+  
+  function handleAnswer(selectedOption) {
+  const question = selectedQuestions[currentQuestionIndex];
+  const optionButtons = document.querySelectorAll('.option-btn');
+  
+  // Disable all option buttons after selection
+  optionButtons.forEach(button => {
+    button.disabled = true;
+  });
+ // Update progress numbers
+ const progressNumbers = document.querySelectorAll('.progress-number');
+        progressNumbers[currentQuestionIndex].classList.add('completed');
+        
+  // Highlight correct and wrong answers
+  optionButtons.forEach((button, index) => {
+    if (index === question.answer) {
+            button.style.backgroundColor = '#98D15F';
+            button.style.color = 'white';
+        }
+        if (index === selectedOption && selectedOption !== question.answer) {
+            button.style.backgroundColor = '#EF5350';
+            button.style.color = 'white';
+        }
+  });
+
+  if (selectedOption === question.answer) {
+    score++;
+  }
+
+  // Move to next question after a short delay
+  setTimeout(() => {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < selectedQuestions.length) {
+                progressNumbers[currentQuestionIndex].classList.add('active');
+                showQuestion();
+    } else {
+      showResult();
+    }
+  }, 3000);
+}
+
+function showQuestion() {
+        const question = selectedQuestions[currentQuestionIndex];
+        document.getElementById('questionText').textContent = `${currentQuestionIndex + 1}. ${question.question}`;
+        
+        // Update progress numbers
+        const progressNumbers = document.querySelectorAll('.progress-number');
+        progressNumbers.forEach((number, index) => {
+            number.classList.remove('active');
+            if (index === currentQuestionIndex) {
+                number.classList.add('active');
+            }
+        });
+
+        // Handle question image if present
+        const questionImage = document.getElementById("questionImage");
+        if (question.image) {
+            questionImage.src = question.image;
+            questionImage.style.display = "block";
+        } else {
+            questionImage.style.display = "none";
+        }
+
+        // Create option buttons
+        const optionsContainer = document.getElementById('optionsContainer');
+        optionsContainer.innerHTML = '';
+        
+        question.options.forEach((option, index) => {
+            const button = document.createElement('button');
+            button.className = 'option-btn';
+            button.textContent = option;
+            button.onclick = () => handleAnswer(index);
+            optionsContainer.appendChild(button);
+        });
+
+        // Update progress bar
+        const progressFill = document.getElementById('progressFill');
+        const progress = ((currentQuestionIndex + 1) / selectedQuestions.length) * 100;
+        progressFill.style.width = `${progress}%`;
+    }
+
+function showResult() {
+  document.getElementById('quizSection').style.display = 'none';
+  document.getElementById('resultSection').style.display = 'block';
+  document.getElementById('scoreText').textContent = `You scored ${score} out of ${selectedQuestions.length}!`;
+}
+
+function restartQuiz() {
+  document.getElementById('resultSection').style.display = 'none';
+  document.querySelector('.features').style.display = 'block';
+  document.getElementById('quizSection').style.display = 'none';
+}
+
+// Add event listeners
+document.querySelector('.start-btn').addEventListener('click', startQuiz);
+document.querySelectorAll('.btn.btn-primary').forEach(button => {
+  button.addEventListener('click', startQuiz);
+});
+
+
+
+
+
+
+const factsTrack = document.querySelector('.facts-track');
+const factCards = document.querySelectorAll('.fact-card');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+const dotsContainer = document.querySelector('.facts-dots');
+
+let currentIndex = 0;
+const totalSlides = factCards.length;
+
+// Create dots
+factCards.forEach((_, index) => {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    if (index === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goToSlide(index));
+    dotsContainer.appendChild(dot);
+});
+
+const dots = document.querySelectorAll('.dot');
+
+function updateSlide() {
+    // Update cards
+    factCards.forEach((card, index) => {
+        card.classList.remove('active');
+        if (index === currentIndex) {
+            card.classList.add('active');
+        }
+    });
+
+    // Update dots
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentIndex);
+    });
+
+    // Calculate scroll position
+    const cardWidth = factCards[0].offsetWidth + 24; // Including gap
+    factsTrack.scrollLeft = currentIndex * cardWidth;
+}
+
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateSlide();
+}
+
+function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateSlide();
+}
+
+function goToSlide(index) {
+    currentIndex = index;
+    updateSlide();
+}
+
+prevBtn.addEventListener('click', prevSlide);
+nextBtn.addEventListener('click', nextSlide);
+
+// Auto-advance slides
+setInterval(nextSlide, 5000);
+
+// Initial update
+updateSlide();
+
+
+
+
+function showQuestionBank() {
+    // Hide features section
+    document.querySelector('.features').style.display = 'none';
+    
+    // Hide quiz section completely
+    document.querySelector('#quizSection').style.display = 'none';
+    document.querySelector('#quizSection').style.visibility = 'hidden';
+    document.querySelector('#quizSection').style.position = 'absolute';
+    
+    // Show question bank section
+    document.getElementById('questionBankSection').style.display = 'block';
+    document.getElementById('questionBankSection').style.visibility = 'visible';
+    document.getElementById('questionBankSection').style.position = 'relative';
+
+    document.getElementById('backButton').style.display = 'flex';
+    
+    // Scroll to question bank
+    document.getElementById('questionBankSection').scrollIntoView({ behavior: 'smooth' });
+}
+function goBack() {
+    // Show features section
+    document.querySelector('.features').style.display = 'block';
+    
+    // Hide question bank section
+    document.getElementById('questionBankSection').style.display = 'none';
+    
+    // Hide quiz section
+    document.querySelector('#quizSection').style.display = 'none';
+    
+    // Hide back button
+    document.getElementById('backButton').style.display = 'none';
+    
+    // Scroll to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+  </script> 
+</body>
+</html>
+
